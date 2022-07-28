@@ -1,0 +1,228 @@
+//Após uma prova de vestibular, uma escola quer identificar quantos dos seus alunos foram aprovados em cada turma de formandos. Ela quer saber qual aluno teve a maior nota e de qual turma ele é. Nessa escola, há quatro turmas (A, B, C e D) com vinte e cinco alunos cada.
+
+//Elabore um algoritmo que solicite o nome e a nota do vestibular aos alunos. Depois, informe quantos deles foram aprovados, de que turma são, qual a maior nota em cada turma e qual aluno teve a maior nota de todas.
+
+//Para que o aluno seja aprovado no vestibular, ele deverá obter nota maior ou igual a 7.
+
+//ATENÇÃO: As notas por turma não podem se repetir.
+
+
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 6/30/2022
+Var
+// Seção de Declarações das variáveis 
+   contadorA, qtd_aprovadosA, contadorB, qtd_aprovadosB, contadorC, qtd_aprovadosC, contadorD, qtd_aprovadosD: inteiro
+   AlunoA, Melhor_AlunoA, AlunoB, Melhor_AlunoB, AlunoC, Melhor_AlunoC, AlunoD, Melhor_AlunoD, Melhor_Aluno_Geral: caractere
+   NotaA, Melhor_NotaA, NotaB, Melhor_NotaB, NotaC, Melhor_NotaC, NotaD, Melhor_NotaD, Melhor_Nota_Geral: Real
+   escolha_turma, SN: caractere
+   turmaA, turmaB, turmaC, turmaD, Melhor_turma: caractere
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   Escreval("-------------------------------------------")
+   Escreval("--------------Vestibular_Relação de Notas-------------")
+   Escreval("-------------------------------------------")
+
+
+   Repita
+      Escreval("------------Digite a turma(A, B, C, ou D):-------------")
+      Leia (escolha_turma)
+      Se ((escolha_turma = "A") ou (escolha_turma = "a")) entao
+         Escreval ("Cadastro dos alunos da turma A")
+         contadorA <- 1
+         Melhor_NotaA <- 0
+         qtd_aprovadosA <- 0
+
+         Para contadorA de 1 ate 2 faca
+
+              Escreval("Aluno", contadorA)
+              Escreval("Digite o nome do(a)", contadorA, "º aluno(a): ")
+              Leia (AlunoA)
+              Escreval("Nota de " , AlunoA , ": ")
+              Leia (NotaA)
+
+              Se (NotaA > Melhor_NotaA) entao
+                 Melhor_NotaA <- NotaA
+                 Melhor_AlunoA <- AlunoA
+                 turmaA <- "turma A"
+                 
+              Fimse
+
+              Se(NotaA >= 7) entao
+                  Escreval ("Aluno foi aprovado")
+                  qtd_aprovadosA <- qtd_aprovadosA + 1
+              Senao
+                   Escreval ("Aluno foi reprovado")
+
+              Fimse
+
+         Fimpara
+
+      Senao
+         Se ((escolha_turma = "B") ou (escolha_turma = "b")) entao
+            Escreval ("Cadastro dos alunos da turma B")
+            contadorB <- 1
+            Melhor_NotaB <- 0
+            qtd_aprovadosB <- 0
+
+         Para contadorB de 1 ate 2 faca
+
+              Escreval("Aluno", contadorB)
+              Escreval("Digite o nome do(a)", contadorB, "º aluno(a): ")
+              Leia (AlunoB)
+              Escreval("Nota de " , AlunoB , ": ")
+              Leia (NotaB)
+
+              Se (NotaB > Melhor_NotaB) entao
+                 Melhor_NotaB <- NotaB
+                 Melhor_AlunoB <- AlunoB
+                 turmaB <- "turma B"
+              Fimse
+
+              Se(NotaB >= 7) entao
+                  Escreval ("Aluno foi aprovado")
+                  qtd_aprovadosB <- qtd_aprovadosB + 1
+              Senao
+                   Escreval ("Aluno foi reprovado")
+
+              Fimse
+
+         Fimpara
+            
+       Senao
+         Se ((escolha_turma = "C") ou (escolha_turma = "c")) entao
+               Escreval ("Cadastro dos alunos da turma C")
+               contadorC <- 1
+               Melhor_NotaC <- 0
+               qtd_aprovadosC <- 0
+
+         Para contadorB de 1 ate 25 faca
+
+              Escreval("Aluno", contadorC)
+              Escreval("Digite o nome do(a)", contadorC, "º aluno(a): ")
+              Leia (AlunoC)
+              Escreval("Nota de " , AlunoC , ": ")
+              Leia (NotaC)
+
+              Se (NotaC > Melhor_NotaC) entao
+                 Melhor_NotaC <- NotaC
+                 Melhor_AlunoC <- AlunoC
+                 turmaC <- "turma C"
+              Fimse
+
+              Se(NotaC >= 7) entao
+                  Escreval ("Aluno foi aprovado")
+                  qtd_aprovadosC <- qtd_aprovadosC + 1
+              Senao
+                   Escreval ("Aluno foi reprovado")
+
+              Fimse
+
+         Fimpara
+
+         Senao
+            Se ((escolha_turma = "D") ou (escolha_turma = "d")) entao
+                  Escreval ("Cadastro dos alunos da turma D")
+
+                  contadorD <- 1
+                  Melhor_NotaD <- 0
+                  qtd_aprovadosD <- 0
+
+                  Para contadorD de 1 ate 2 faca
+
+                       Escreval("Aluno", contadorD)
+                       Escreval("Digite o nome do(a)", contadorD, "º aluno(a): ")
+                       Leia (AlunoD)
+                       Escreval("Nota de " , AlunoD , ": ")
+                       Leia (NotaD)
+
+                       Se (NotaD > Melhor_NotaD) entao
+                          Melhor_NotaD <- NotaD
+                          Melhor_AlunoD <- AlunoD
+                          turmaD <- "turma A"
+
+                       Fimse
+
+                       Se(NotaD >= 7) entao
+                                Escreval ("Aluno foi aprovado")
+                                qtd_aprovadosD <- qtd_aprovadosD + 1
+                       Senao                                                        Escreval ("Aluno foi reprovado")
+
+                       Fimse
+
+                Fimpara
+
+               Fimse
+            Fimse
+         Fimse
+      Fimse
+
+
+
+
+      Escreval("Você quer cadastrar outra turma? [S/N]")
+      Leia(SN)
+   Ate ((SN = "N") ou (SN = "n"))
+   
+   Melhor_Nota_Geral <-  Melhor_NotaA
+   Melhor_Aluno_Geral <- Melhor_AlunoA
+   Melhor_turma <- turmaA
+
+   Se ( Melhor_NotaB > Melhor_Nota_Geral) entao
+      Melhor_Nota_Geral <- Melhor_NotaB
+      Melhor_Aluno_Geral <- Melhor_AlunoB
+      Melhor_turma <- turmaB
+      
+      
+   Senao
+        Se ( Melhor_NotaC > Melhor_Nota_Geral) entao
+           Melhor_Nota_Geral <- Melhor_NotaC
+           Melhor_Aluno_Geral <- Melhor_AlunoC
+           Melhor_turma <- turmaC
+        Senao
+             Se ( Melhor_NotaD > Melhor_Nota_Geral) entao
+                Melhor_Nota_Geral <- Melhor_NotaD
+                Melhor_Aluno_Geral <- Melhor_AlunoD
+                Melhor_turma <- turmaD
+             Fimse
+         Fimse
+    Fimse
+                 
+                 
+
+   Escreval ("-------------Relações de Alunos da turma A-----------------")
+   Escreval("O número de aprovados foi", qtd_aprovadosA)
+
+   Escreval("A maior nota foi do(a) aluno(a) ",Melhor_AlunoA, " com nota", Melhor_NotaA)
+   Escreval ("-----------------------------------------------------------")
+   
+   Escreval("")
+   Escreval("")
+   Escreval ("-------------Relações de Alunos da turma B-----------------")
+   Escreval("O número de aprovados foi", qtd_aprovadosB)
+
+   Escreval("A maior nota foi do(a) aluno(a) ",Melhor_AlunoB, " com nota", Melhor_NotaB)
+   Escreval ("-----------------------------------------------------------")
+   
+
+   Escreval ("-------------Relações de Alunos da turma C-----------------")
+   Escreval("O número de aprovados foi", qtd_aprovadosC)
+
+   Escreval("A maior nota foi do(a) aluno(a) ",Melhor_AlunoC, " com nota", Melhor_NotaC)
+   Escreval ("-----------------------------------------------------------")
+   
+
+   Escreval ("-------------Relações de Alunos da turma D-----------------")
+   Escreval("O número de aprovados foi", qtd_aprovadosD)
+
+   Escreval("A maior nota foi do(a) aluno(a) ",Melhor_AlunoD, " com nota", Melhor_NotaD)
+   Escreval ("-----------------------------------------------------------")
+   
+   Escreval ("")
+   Escreval ("")
+   Escreval ("A melhor nota entre todas as turmas é do aluno: ",Melhor_Aluno_Geral, " da ",Melhor_turma, " com nota ", Melhor_Nota_Geral)
+Fimalgoritmo
