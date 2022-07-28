@@ -1,0 +1,39 @@
+Algoritmo "semnome"
+
+Var
+
+ordem : vetor [0..9] de inteiro
+aux, cont, i, j  : inteiro
+
+Inicio
+
+ para cont de 0 ate 9 faca
+   escreval("Entre com um numero:")
+   leia(ordem[cont])
+fimpara
+
+escreva("Numeros digitados: ")
+para cont de 0 ate 9 faca
+     escreva(ordem[cont], " ")
+fimpara
+
+para j de 9 ate 0 passo -1 faca
+     para i de 0 ate j-1 passo 1 faca
+          se ordem[i] > ordem[i+1] entao
+             aux <- ordem[i]
+             ordem[i] <- ordem[i+1]
+             ordem[i+1] <- aux
+          fimse
+     fimpara
+fimpara
+
+escreval(" ")
+escreva("A ordem dos numeros sao: ")
+
+para i de 0 ate 9 faca
+     escreva(ordem[i], " ")
+fimpara
+
+
+
+Fimalgoritmo
