@@ -1,0 +1,37 @@
+from cmath import sqrt
+from turtle import ycor
+
+
+a = complex(1,2)
+b = complex(3,4)
+c = complex(5,6)
+
+
+
+print(" \n A soma dos números complexos (1 + 2j), (3, 4j) e (5, 6j) é: ")
+print( a + b + c)
+
+print("A subtração dos números complexos (1 + 2j),  (3, 4j) e (5, 6j) é: ")
+print(a - b - c)
+
+print(" \n A multiplicação dos números complexos (1 + 2j),  (3, 4j) e (5, 6j) é: ")
+print(a * b * c)
+
+print(" \n A divisão dos números complexos (1 + 2j),  (3, 4j) e (5, 6j) é: ")
+print(a / b / c)
+
+print("\n A parte rel de (1 + 2j) é: ")
+print(a.real)
+print("A parte imaginária de (1 + 2j) é: ")
+print(a.imag)
+
+print(" \n A parte rel de (3 + 4j) é: ")
+print(b.real)
+print("A parte imaginária de (3 + 4j) é: ")
+print(b.imag)
+
+print("\n A parte rel de (5, 6j) é: ")
+print(c.real)
+print("A parte imaginária de (5, 6j) é: ")
+print(c.imag)
+print("\n")
