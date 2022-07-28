@@ -1,0 +1,82 @@
+Qual o meio de transporte? 
+	Se (terrestre) então
+		Se (Cabe apenas uma pessoa) então
+			Se (É pesado) então
+				É trator
+			Senão
+				Se (Tem pedal) então
+					É bicicleta
+				Fim-se
+			Fim-se	
+		Senão
+			Se (Usa capacete) então
+				É moto
+			Senão
+				Se (Tem passageiro) então
+					Se (Usa trilho) então
+						É trem
+					Senão
+						Se (Anda na pista) então
+							Se (É alto) então
+								Se (Usa carroceria) então
+									É caminhão
+								Senão
+									Se (Pode ter cobrador) então
+										É ônibus
+									Fim-se
+								Fim-se
+							Senão
+								Se (É veículo leve) então
+									É carro
+								Fim-se
+							Fim-se	
+						Fim-se
+					Fim-se	
+				Fim-se	
+			Fim-se	
+		Fim-se
+	Senão
+		Se (É aéreo) então
+			Se (Precisa pular) então
+				É Asa Delta
+			Senão
+				Se(Viaja dentro) então
+					Se (É devagar) então
+						É balão
+					Senão
+						Se (Tem piloto) então
+							Se (Possui asas fixas) então
+								É avião
+							Senão
+								Se (Faz voo vertical) então
+									É helicóptero
+								Fim-se
+							Fim-se
+						Fim-se	
+					Fim-se	
+				Fim-se
+			Fim-se
+		Senão
+			Se (É aquático) então
+				Se (É coberto d'água) então
+					É submarino
+				Senão
+					Se (Navega na água) então
+						Se (Possui Vela) então
+							É barco
+						Senão
+							Se (Tem motor) então
+								Se (É alto) então
+									É navio
+								Senão
+									Se (Pode ser descoberto) então
+										É lancha
+									Fim-se	
+								Fim-se
+							Fim-se
+						Fim-se	
+					Fim-se	
+				Fim-se
+			Fim-se
+		Fim-se
+	Fim-se	
