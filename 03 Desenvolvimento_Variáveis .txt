@@ -1,0 +1,7 @@
+Cada variável terá o mesmo nome do seu significado, onde Nome é do tipo caracter, CPF e RG apesar de ser números também será do tipo caracter, Altura do tipo Real e endereço do tipo caracter.  
+
+Caracter Nome <- José Almeida da Silva
+Caracter CPF <- 12345678900
+Caracter RG <- 951730
+Real Altura <- 1,78
+Carater Endereco <-  Rua A, 380 – Centro – Recife/PE
