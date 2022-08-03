@@ -1,0 +1,32 @@
+#Faça uma função calculadora de dois números com três parâmetros: os dois primeiros serão os números da operação e o terceiro será a entrada que definirá a operação a ser executada. Considera a seguinte definição:
+#1. Soma
+#2. Subtração
+#3. Multiplicação
+#4. Divisão
+
+
+numero_um = int(input("Entre com o primeiro número: "))
+numero_dois = int(input("Entre com o segundo número: "))
+
+operador = int(input("Quais operações deseja fazer: 1_Soma, 2_Subtração, 3_Multiplicação ou 4_Divisão? "))
+
+def calculadora(num_um, num_dois, operador):
+  if operador == 1:
+    print("A soma dos números é: ")
+    resultado = num_um + num_dois
+  elif operador == 2:
+    print("A subtração dos números é: ")
+    resultado = num_um - num_dois
+  elif operador == 3:
+    print("A multiplicação dos números é: ")
+    resultado = num_um * num_dois
+  else :
+    print("A divisão dos números é: ")
+    resultado = num_um / num_dois
+
+  return resultado
+
+
+calculo = calculadora(numero_um, numero_dois, operador)
+
+print(calculo)
