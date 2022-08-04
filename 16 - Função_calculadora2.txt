@@ -1,0 +1,40 @@
+#Faça uma função calculadora que os números e as operações serão feitas pelo usuário. O código deve ficar rodando infinitamente até que o usuário escolha a opção de sair. No início, o programa mostrará a seguinte lista de operações:
+#1: Soma
+#2: Subtração
+#3: Multiplicação
+#4: Divisão
+#0: Sair
+#===============================================================================================
+
+def calculadora(num_um, num_dois, operador):
+  if operador == 1:
+    print("A soma dos números é: ")
+    resultado = num_um + num_dois
+  elif operador == 2:
+    print("A subtração dos números é: ")
+    resultado = num_um - num_dois
+  elif operador == 3:
+    print("A multiplicação dos números é: ")
+    resultado = num_um * num_dois
+  elif operador == 4:
+    print("A divisão dos números é: ")
+    resultado = num_um / num_dois  
+  
+
+  return resultado
+
+operador = 1  
+
+while operador != 0:  
+
+  operador = int(input("Quais operações deseja fazer: 1_Soma, 2_Subtração, 3_Multiplicação, 4_Divisão ou 0_Sair? "))
+  
+  if operador !=0 and operador <= 4:
+      
+    numero_um = int(input("Entre com o primeiro número para operação: "))
+    numero_dois = int(input("Entre com o segundo número: ")) 
+  
+  
+    calculo = calculadora(numero_um, numero_dois, operador)
+
+    print(calculo)
