@@ -1,0 +1,8 @@
+Grafos no contextotecnológico
+
+1_Os grafos tem grande valia quando o assunto é tecnologia. Temos como exemplo a gigante Google, que tem como seu carro chefe seu mecanismo de busca.
+Na Google o mecanismo de busca baseia-se na utilização de grafos, onde o intuito do funcionamento do sistema de busca é não
+apenas usar como critério de seleção, na sua base de dados, o termo inserido pelo usuário, mas contextualizar tudo que 
+tiver relação as informações passadas, ou seja, o termo informado pelo usuário terá como resultado todos os termos relacionados com seu imenso grafo.
+
+2_Os grafos também são amplamente utilizados na área de Ciência da Informação na recuperação de dados, através de análise de citações, redes de coautoria e representação de dados infométricos.
