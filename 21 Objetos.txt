@@ -1,0 +1,43 @@
+Classifique dois objetos materiais e dois abstratos. Insira, no mínimo, três métodos e três atributos para cada.
+
+Carro, objeto material
+	
+	Métodos: Ligar()
+			 Acelerar()
+			 Frear()
+			 
+	Atributos: Marca
+			   Modelo
+			   Cor
+			   
+Gato, objeto material
+	
+	Métodos: Miar()
+			Comer()
+			Beber()
+			
+	Atributos: Raça
+			   Sexo
+			   Cor
+			   
+Música, objeto abstrato
+	
+	Métodos: Tocar()
+			 Pausar()
+			 Finalizar()
+			 
+	Atributos: Compositor
+			   Gênero
+			   Ano de lançamento
+			   
+Filme, objeto abstrato
+	
+		Métodos: Iniciar()
+				 Pausar()
+				 Finalizar()
+				 
+		Atributos: Autor
+				   Categoria
+				   Duração
+				   
+			
