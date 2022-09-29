@@ -1,0 +1,5 @@
+Escolha e descreva um padrão de projetos.
+
+Padrão Singleton_ Garanteque um objeto terá apenas uma única classe, isto é, que uma classe irá gerar apenas um objeto e que este estará disponível de forma única para todo o escopo de uma aplicação.
+Com isso, as aplicações que necessitam controlar o número de instâncias criadas de algumas classes, seja pela necessidade da própria lógica ou por motivos de performance e economia de recursos, se comunicam com um objeto.
+Estas aplicações se comunica
