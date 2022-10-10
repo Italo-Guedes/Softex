@@ -1,0 +1,13 @@
+Pesquise sobre padrões de projeto e escolha um para apresentar e descrever o seu funcionamento. Além disso, explique quais as vantagens e desvantagens comparados a outros e mostre suas referências.
+
+Prototype(Protótipo, Clone) é um padrão de projeto criacional que permite copiar objetos existentes sem fazer seu código ficar dependente de suas classes.
+
+O problema é que nem sempre é possível copiar o objeto por completo, visto que alguns dos seus campos podem ser privados e não serem visíveis fora do objeto.
+
+Solução, o processo de clonagem é atribuído para o próprio objeto que está sendo clonado, todo o processo é feito através de interfaces que as classes implementam.
+Essa interface permite que o objeto seja clonado sem acoplar o código à classe do objeto. Isso é possível através do método clonar, este método cria um objeto da 
+classe atual e carrega todos os valores para o novo, possiblitando o acesso aos campos privados de outros objetos que perteçam a mesma classe.
+
+
+
+ 
