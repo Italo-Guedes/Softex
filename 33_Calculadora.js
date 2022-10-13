@@ -1,5 +1,4 @@
-<meta charset="UTF-8">
-<script>
+
 let prompt = require('prompt-sync')();
 
 let num1 = parseFloat(prompt("Informe o primeiro número: "))
@@ -33,4 +32,3 @@ switch (op) {
     else
         console.log(num1/num2)
   }
-</script>
