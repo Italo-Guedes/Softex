@@ -11,9 +11,9 @@ console.log("Digite - para Subtração.")
 console.log("Digite * para Multiplicação.")
 console.log("Digite / para Divisão.")
 
-let operacao = prompt()
+let op = prompt()
 
-switch (operacao) {
+switch (op) {
   case '+':
     console.log(num1+num2)
     break
